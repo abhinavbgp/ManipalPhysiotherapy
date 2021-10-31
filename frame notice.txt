@@ -1,0 +1,1 @@
+the name which is provided for frame in abhibha.html will be target place or frame of all the links you will click.

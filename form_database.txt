@@ -1,0 +1,58 @@
+first database name manipala("a") here last a for demo version
+
+create database manipala
+
+use manipala
+
+create table patienta (
+P_ID int not null primary key,
+P_name varchar(250),
+dr varchar(250),
+address varchar(250),
+phone varchar(110),
+addm_date varchar(250)
+);
+
+date formate will be 2008-5-5
+
+
+insert into patienta values(patint id,'patient name','dr name','address',phone number,'admmision date');
+
+insert into patienta values(15,'raja','Dr babu singh','mr abhinav adampur bhagalpur',9740899349,'9 sec 2008');
+
+insert into patienta values(23,'ruchi','Dr sanjay singh','ms ruchi nanital uttarpradesh',9878003443,'6 sep 2008');
+
+
+insert into patienta values(88,'rohit','Dr pranav kumar','mr rohit mysore ',9776509349,'8 jan 2008');
+
+
+for fill_present_chart.html i have created "present" table. which has following attributes P_Id,P_name,status,time.
+
+to add a new attribute in exiting table use this command
+
+mysql> ALTER TABLE employees ADD salary INT(7) NOT NULL;
+
+inset into present values(68,'gygy','present','3pm to 7pm','sep 2008','4 jan',500);
+
+for to to write more the 256 char use "text" instead of "varchar"
+
+
+for dischaerd fill ihave created a table named discharge has attributes P_ID, P_name,inprovement,P_statement,R_F_D
+
+patienta table other new added attributes---
+
+ALTER TABLE patienta ADD phone_home varchar(250);
+ALTER TABLE patienta ADD problem varchar(250);
+ALTER TABLE patienta ADD sex varchar(250);
+ALTER TABLE patienta ADD married varchar(250);
+
+ALTER TABLE patienta ADD F_M_S varchar(250);
+ALTER TABLE patienta ADD date_of_birth varchar(250);
+ALTER TABLE patienta ADD age varchar(250);
+ALTER TABLE patienta ADD email varchar(250);
+ALTER TABLE patienta ADD media varchar(250);
+to delete column value from a table u use following command :->
+
+DELETE FROM patienta
+
+all table data will be deleted but tabble will be there

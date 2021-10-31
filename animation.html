@@ -1,0 +1,23 @@
+
+
+<div id="spaceship" style="position:relative">
+<img src="abhinav.JPG">
+</div>
+<script>
+function moving2(){
+if (spaceship.style.pixelLeft<1000)
+spaceship.style.pixelLeft+=5
+moveid2=setTimeout("moving2()",50)
+}
+
+function come_back2(){
+clearTimeout(moveid2)
+spaceship.style.pixelLeft=0
+}
+</script>
+
+<form>
+<input type="button" value="Move" onClick="moving2()">
+<input type="button" value="Come back" onClick="come_back2()">
+</form>
+
